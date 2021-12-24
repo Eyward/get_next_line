@@ -6,7 +6,7 @@
 /*   By: zzirh <zzirh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/29 23:50:41 by zzirh             #+#    #+#             */
-/*   Updated: 2021/12/16 22:00:06 by zzirh            ###   ########.fr       */
+/*   Updated: 2021/12/24 17:43:25 by zzirh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -103,19 +103,3 @@ char	*get_next_line(int fd)
 	stmp = ft_rest(stmp);
 	return (line);
 }
-
-// #include <stdio.h>
-// #include <fcntl.h>
-
-// int main()
-// {
-// 	int fd1 = open("dfk.txt",O_CREAT | O_RDWR, 777);
-// 	write(fd1 , "111\n2222\n33333\n",15);
-// 	close(fd1);
-// 	fd1 = open("dfk.txt",O_RDONLY);
-// 	printf("%s",get_next_line(fd1));
-// 	printf("%s",get_next_line(fd1));
-// 	printf("%s",get_next_line(fd1));
-
-// 	return (0);
-// }
